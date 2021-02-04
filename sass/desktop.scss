@@ -1,0 +1,106 @@
+@media screen and (min-width: 576px) {
+   .home-container,
+   .about-container,
+   .app-container {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+   }
+
+   .about-data,
+   .about-init,
+   .app-data,
+   .app-init,
+   .contact-container,
+   .contact-init {
+      text-align: initial;
+   }
+
+   .about-img,
+   .app-img {
+      width: 380px;
+      order: -1;
+   }
+
+   // Contact
+   .contact {
+      &-container {
+         grid-template-columns: 1.75fr 1fr;
+      }
+
+      &-button {
+         justify-self: center;
+      }
+   }
+}
+
+// Above 768px
+@media screen and (min-width: 769px) {
+   .section {
+      padding-top: 8rem;  
+   }
+
+   .nav {
+      height: calc(var(--header-height) + 2rem);
+
+      &-list {
+         display: flex;
+         height: var(--header-height);
+      }
+
+      &-item {
+         margin-left: var(--mb-6);
+      }
+
+      &-toggle {
+         display: none;
+      }
+   }
+
+   // Change theme
+   .change-theme {
+      position: initial;
+      margin-left: var(--mb-3);
+      margin-top: .870rem;
+   }
+
+   // Home
+   .home-container {
+      height: 100vh;
+      justify-items: center;
+   }
+
+   .menu {
+      &-container {
+         grid-template-columns: repeat(3, 3fr);
+         column-gap: 4rem;
+      }
+
+      &-content {
+         padding: 1.5rem;
+      }
+
+      &-img {
+         width: 130px;
+      }
+   }
+
+   .app-store {
+      margin: 0 var(--mb-1) 0 0;
+   }
+}
+
+// Above 960px
+@media screen and (min-width: 960px) {
+   .grid-container {
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .home-img {
+      width: 500px;
+   }
+
+   .about-container, .app-container {
+      column-gap: 7rem;
+   }
+}

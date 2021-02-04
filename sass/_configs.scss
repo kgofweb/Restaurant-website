@@ -1,0 +1,146 @@
+// Font family
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600&display=swap');
+
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+// Dark theme
+body.dark-theme {
+   --body-color: #1D2521;
+   --title-color: #F1F3F2;
+   --text-color: #C7D1CC;
+   --container-color: #27302C;
+}
+
+// Button dark/light theme
+.change-theme {
+   position: absolute;
+   top: 2.2rem;
+   right: 1.5rem;
+   color: var(--text-color);
+   font-size: var(--icon-font-size);
+   cursor: pointer;
+}
+
+body {
+   font-family: var(--body-font);
+   font-size: var(--normal-font-size);
+   background-color: var(--body-color);
+   color: var(--text-color);
+   line-height: 1.6;
+   margin: var(--header-height) 0 0 0;
+}
+
+ul {
+   list-style: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   // display: block;
+}
+
+// Global css
+.section {
+   padding: 4rem 0 2rem;
+
+   &-title, &-subtitle {
+      text-align: center;
+   }
+
+   &-title {
+      font-size: var(--h1-font-size);
+      color: var(--title-color);
+      margin-bottom: var(--mb-3);
+   }
+
+   &-subtitle {
+      display: block;
+      color: var(--first-color);
+      font-weight: var(--font-w-medium);
+      margin-bottom: var(--mb-1);
+   }
+}
+
+// Utilities
+%display {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+%display-2 {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+// Layout
+.grid-container {
+   max-width: 960px;
+   width: calc(100% - 3rem);
+   margin-left: var(--mb-3);
+   margin-right: var(--mb-3);
+}
+
+.bd-grid {
+   display: grid;
+   gap: 1.5rem;
+}
+
+// Scroll top
+.scroll-top {
+   @extend %display-2;
+   position: fixed;
+   bottom: 5%;
+   right: 1.5rem;
+   padding: .3rem;
+   color: #fff;
+   background: rgba(6, 156, 84, .5);
+   border-radius: .4rem;
+   transition: .4s;
+   visibility: hidden;
+   z-index: var(--z-tooltip);
+
+   &:hover {
+      background-color: var(--first-color-alt);
+   }
+
+   &-icon {
+      font-size: 1.5rem;
+      color: var(--body-color);
+   }
+}
+
+.show-scroll {
+   visibility: visible;
+   bottom: 1.5rem;
+}
+
+// Button
+.button {
+   display: inline-block;
+   color: #fff;
+   background-color: var(--first-color);
+   padding: .75rem;
+   margin-bottom: var(--mb-2);
+   border-radius: .5rem;
+   transition: 0.3s;
+
+   &:hover {
+      background-color: var(--first-color-alt);
+   }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Box Icons -->
+   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+   <!-- Style CSS -->
+   <link rel="stylesheet" href="./css/style.css">
+   <title>Restaurant website</title>
+</head>
+<body>
+   <!-- Scroll Top -->
+   <a href="#" id="scroll-top" class="scroll-top">
+      <i class="bx bx-chevron-up scroll-top-icon"></i>
+   </a>
+
+   <!-- Header -->
+   <header id="header" class="header">
+      <nav class="nav grid-container">
+         <!-- logo -->
+         <a href="#" class="nav-logo">Delight</a>
+         <!-- menu -->
+         <div id="nav-menu" class="nav-menu">
+            <ul class="nav-list">
+               <li class="nav-item">
+                  <a href="#home" class="nav-link active">
+                     <!-- <i class='bx bx-wifi-0'></i> -->
+                     Home
+                  </a>
+               </li>
+               <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="#service" class="nav-link">Services</a></li>
+               <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+               <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+               <li><i id="theme-button" class="bx bx-sun change-theme"></i></li>
+            </ul>
+         </div>
+         <!-- toggle -->
+         <div id="nav-toggle" class="nav-toggle">
+            <i class='bx bx-menu-alt-right'></i>
+         </div>
+      </nav>
+   </header>
+   
+   <main class="main">
+      <!-- Home -->
+      <section id="home" class="home">
+         <div class="home-container grid-container bd-grid">
+            <div class="home-data">
+               <h1 class="home-title">Delicious dishes</h1>
+               <h2 class="home-subtitle">Try the best food of <br> the week</h2>
+            </div>
+
+            <div class="home-img-box">
+               <img src="./img/home.png" class="home-img" alt="Pizza">
+            </div>
+         </div>   
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about section grid-container">
+         <div class="about-container bd-grid">
+            <div class="about-data">
+               <span class="section-subtitle about-init">About us</span>
+               <h2 class="section-title about-init">We cook the best <br>tasty food</h2>
+               <p class="about-description">
+                  We cook the best food in the entire city, with excellent customer service, the best meals and at the best price, visit us
+               </p>
+               <a href="#" class="button">Explore history</a>
+            </div>
+
+            <img src="./img/about.jpg" class="about-img" alt="Pizza">
+         </div>
+      </section>
+
+      <!-- Services -->
+      <section id="service" class="service section grid-container">
+         <span class="section-subtitle">Offering</span>
+         <h2 class="section-title">Our Awesome Services</h2>
+
+         <div class="service-container bd-grid">
+            <div class="service-content">
+               <img src="./img/dish.svg" class="service-img" alt="dishes">
+               <h3 class="service-title">Excellent food</h3>
+               <p class="service-description">
+                  We offer our clients excellent quality services for many years, with the best and delicious food in the city.
+               </p>
+            </div>
+            <div class="service-content">
+               <img src="./img/pizza.svg" class="service-img" alt="dishes">
+               <h3 class="service-title">Delivery</h3>
+               <p class="service-description">
+                  We offer our clients excellent quality services for many years, with the best and delicious food in the city.
+               </p>
+            </div>
+            <div class="service-content">
+               <img src="./img/truck.svg" class="service-img" alt="dishes">
+               <h3 class="service-title">Fast food</h3>
+               <p class="service-description">
+                  We offer our clients excellent quality services for many years, with the best and delicious food in the city.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <!-- Menu -->
+      <section id="menu" class="menu section grid-container">
+         <span class="section-subtitle">Special One</span>
+         <h2 class="section-title">Menu Of The Week</h2>
+
+         <div class="menu-container bd-grid">
+            <div class="menu-content">
+               <img src="./img/plate1.png" class="menu-img" alt="">
+               <h3 class="menu-name">Barbecue salad</h3>
+               <span class="menu-detail">Delicious dish</span>
+               <span class="menu-price">22.99€</span>
+               <a href="#" class="button menu-btn"><i class='bx bx-cart-alt'></i></a>
+            </div>
+            <div class="menu-container">
+               <div class="menu-content">
+                  <img src="./img/plate2.png" class="menu-img" alt="">
+                  <h3 class="menu-name">Salad with fish</h3>
+                  <span class="menu-detail">Delicious dish</span>
+                  <span class="menu-price">15.99€</span>
+                  <a href="#" class="button menu-btn"><i class='bx bx-cart-alt'></i></a>
+               </div>
+            </div>
+            <div class="menu-container">
+               <div class="menu-content">
+                  <img src="./img/plate3.png" class="menu-img" alt="">
+                  <h3 class="menu-name">Spinach salad</h3>
+                  <span class="menu-detail">Delicious dish</span>
+                  <span class="menu-price">10.99€</span>
+                  <a href="#" class="button menu-btn"><i class='bx bx-cart-alt'></i></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- App -->
+      <section class="app section grid-container">
+         <div class="app-container bd-grid">
+            <div class="app-data">
+               <span class="section-subtitle app-init">App</span>
+               <h2 class="section-title app-init">App is aviable now</h2>
+               <p class="app-description">
+                  Find our application and it, you can make reservations, food orders, see your deliveries on the way and much more.
+               </p>
+               <div class="app-stores">
+                  <a href="#"><img src="./img/app1.png" class="app-store" alt="App Store"></a>
+                  <a href="#"><img src="./img/app2.png" class="app-store" alt="App Store"></a>
+               </div>
+            </div>
+            
+            <img src="./img/movil-app.png" class="app-img" alt="Mobile">
+         </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="contact grid-container section">
+         <div class="contact-container bd-grid">
+            <div class="contact-data">
+               <span class="section-subtitle contact-init">Talk With Us</span>
+               <h2 class="section-title contact-init">Contact Us</h2>
+               <p class="contact-description">If If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
+            </div>
+
+            <div class="contact-button">
+               <a href="#" class="button">Contact us now</a>
+           </div>
+         </div>
+      </section>
+   </main>
+
+   <!-- Footer -->
+   <footer class="footer section grid-container">
+      <div class="footer-container bd-grid">
+         <div class="footer-content">
+            <a href="#" class="footer-logo">Delight Food</a>
+            <span class="footer-description">Restaurant</span>
+            <div>
+               <a href="#" class="footer-social"><i class='bx bxl-facebook'></i></a>
+               <a href="#" class="footer-social"><i class='bx bxl-instagram'></i></a>
+               <a href="#" class="footer-social"><i class='bx bxl-twitter'></i></a>
+            </div>
+         </div>
+
+         <div class="footer-content">
+            <h3 class="footer-title">Serices</h3>
+            <ul>
+               <li><a href="#" class="footer-link">Delivery</a></li>
+               <li><a href="#" class="footer-link">Pricing</a></li>
+               <li><a href="#" class="footer-link">Fast food</a></li>
+               <li><a href="#" class="footer-link">Reserve your spot</a></li>
+            </ul>
+         </div>
+
+         <div class="footer-content">
+            <h3 class="footer-title">Adress</h3>
+            <ul>
+               <li>Lima - Peru</li>
+               <li>Jr Union #999</li>
+               <li>999 - 888 - 777</li>
+               <li>tastyfood@email.com</li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+
+   <!-- Scroll Reveal -->
+   <script src="https://unpkg.com/scrollreveal"></script>
+
+   <!-- My JS -->
+   <script src='./js/script.js'></script>
+</body>
+</html>
