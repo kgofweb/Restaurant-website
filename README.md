@@ -3,10 +3,12 @@ Awesome restaurant web service
 
 Techno used:
 
--HTML
--SASS
--JAVASCRIPT
+    HTML
+
+    SASS
+    
+    JAVASCRIPT
 
 With a new functionality:
 
--Dark Mode
+    Dark Mode
